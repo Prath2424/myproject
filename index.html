@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Content Creator Hub</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="mdc-typography">
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+                    aria-label="Open navigation menu">menu</button>
+                <span class="mdc-top-app-bar__title">Social Media Hub</span>
+            </section>
+        </div>
+    </header>
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
+        <div class="mdc-drawer__header">
+            <h3 class="mdc-drawer__title">Tools</h3>
+            <h6 class="mdc-drawer__subtitle">Select a tool to get started</h6>
+        </div>
+        <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+                <a class="mdc-list-item" href="#youtube-title-optimizer">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">title</i>
+                    <span class="mdc-list-item__text">YouTube Title Optimizer</span>
+                </a>
+                <a class="mdc-list-item" href="#short-video-thumbnail">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">image</i>
+                    <span class="mdc-list-item__text">Short Video Thumbnail</span>
+                </a>
+                <a class="mdc-list-item" href="#trending-music-finder">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">music_note</i>
+                    <span class="mdc-list-item__text">Trending Music Finder</span>
+                </a>
+                <a class="mdc-list-item" href="#video-time-suggestion">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">access_time</i>
+                    <span class="mdc-list-item__text">Video Time Suggestion</span>
+                </a>
+                <a class="mdc-list-item" href="#copyright-free-music">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">music_off</i>
+                    <span class="mdc-list-item__text">Copyright Free Music</span>
+                </a>
+                <a class="mdc-list-item" href="#ai-voice-generator">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">record_voice_over</i>
+                    <span class="mdc-list-item__text">AI Voice Generator</span>
+                </a>
+                <a class="mdc-list-item" href="#long-video-to-short-video">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">transform</i>
+                    <span class="mdc-list-item__text">Long Video to Short Video</span>
+                </a>
+                <li class="mdc-list-divider" role="separator"></li>
+                <h6 class="mdc-list-group__subheader">Instagram Tools</h6>
+                <a class="mdc-list-item" href="#reel-idea-generator">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lightbulb_outline</i>
+                    <span class="mdc-list-item__text">Reel Idea Generator</span>
+                </a>
+                <a class="mdc-list-item" href="#caption-generator">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">closed_caption</i>
+                    <span class="mdc-list-item__text">Caption Generator</span>
+                </a>
+                <a class="mdc-list-item" href="#hashtag-suggestion-tool">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">tag</i>
+                    <span class="mdc-list-item__text">Hashtag Suggestion Tool</span>
+                </a>
+                <a class="mdc-list-item" href="#instagram-reel-template-hub">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">hub</i>
+                    <span class="mdc-list-item__text">Instagram Reel Template Hub</span>
+                </a>
+                <a class="mdc-list-item" href="#instagram-hook-generator">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">anchor</i>
+                    <span class="mdc-list-item__text">Instagram Hook Generator</span>
+                </a>
+                <a class="mdc-list-item" href="#quote-generator-for-stories">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">format_quote</i>
+                    <span class="mdc-list-item__text">Quote Generator for Stories</span>
+                </a>
+                <a class="mdc-list-item" href="#ai-photo-enhancer">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">photo_filter</i>
+                    <span class="mdc-list-item__text">AI Photo Enhancer</span>
+                </a>
+                <a class="mdc-list-item" href="#auto-subtitle-for-reel">
+                    <span class="mdc-list-item__ripple"></span>
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">subtitles</i>
+                    <span class="mdc-list-item__text">Auto Subtitle for Reel</span>
+                </a>
+                <!-- More tools will be added here -->
+            </nav>
+        </div>
+    </aside>
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+        <main class="main-content" id="main-content">
+            <div id="youtube-title-optimizer" class="mdc-card" style="margin-bottom: 1rem;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                                <input type="text" id="api-key" class="mdc-text-field__input">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="api-key" class="mdc-floating-label">Gemini API Key</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                            <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tool content will go here -->
+            <div id="short-video-thumbnail" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">YouTube Title Optimizer</h2>
+                            <p class="mdc-typography--body2">Enter a topic for your YouTube video and we'll generate a list of optimized titles for you.</p>
+                            <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                                <input type="text" id="video-topic" class="mdc-text-field__input">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="video-topic" class="mdc-floating-label">Video Topic</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                            <button id="generate-titles-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Titles</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="title-list"></div>
+            </div>
+            <div id="api-key-card" class="mdc-card" style="margin-bottom: 1rem;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Short Video Thumbnail</h2>
+                            <p class="mdc-typography--body2">Enter a topic for your short video and we'll generate a thumbnail for you.</p>
+                            <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                                <input type="text" id="short-video-topic" class="mdc-text-field__input">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="short-video-topic" class="mdc-floating-label">Video Topic</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                            <button id="generate-short-thumbnail-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Thumbnail</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="short-thumbnail-placeholder"></div>
+            </div>
+            <div id="trending-music-finder" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Trending Music Finder</h2>
+                            <p class="mdc-typography--body2">Find the most popular songs on YouTube right now.</p>
+                            <button id="find-music-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Find Trending Music</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="music-list"></div>
+            </div>
+            <div id="video-time-suggestion" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Video Time Suggestion</h2>
+                            <p class="mdc-typography--body2">Get suggestions on the best time to post your YouTube video.</p>
+                            <button id="get-time-suggestion-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Get Suggestions</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="time-suggestion-list"></div>
+            </div>
+            <div id="copyright-free-music" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Copyright Free Music</h2>
+                            <p class="mdc-typography--body2">Find copyright-free music for your YouTube videos.</p>
+                            <button id="find-copyright-free-music-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Find Music</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="copyright-free-music-list"></div>
+            </div>
+            <div id="ai-voice-generator" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">AI Voice Generator</h2>
+                            <p class="mdc-typography--body2">Enter a script and we'll generate a voiceover for you.</p>
+                            <div class="mdc-text-field mdc-text-field--textarea" style="width: 100%;">
+                                <textarea id="voice-script" class="mdc-text-field__input"></textarea>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="voice-script" class="mdc-floating-label">Script</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                            <button id="generate-voice-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Voice</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="voice-player"></div>
+            </div>
+            <div id="long-video-to-short-video" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Long Video to Short Video</h2>
+                            <p class="mdc-typography--body2">Upload a long video and we'll help you create a short video with subtitles.</p>
+                            <input type="file" id="long-video-input" accept="video/*">
+                            <button id="process-video-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Process Video</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="short-video-player"></div>
+            </div>
+            <div id="reel-idea-generator" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Reel Idea Generator</h2>
+                            <p class="mdc-typography--body2">Get creative ideas for your next Instagram Reel.</p>
+                            <button id="generate-reel-ideas-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Ideas</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="reel-ideas-list"></div>
+            </div>
+            <div id="caption-generator" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Caption Generator</h2>
+                            <p class="mdc-typography--body2">Enter a topic and we'll generate engaging captions for your Instagram post.</p>
+                            <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                                <input type="text" id="caption-topic" class="mdc-text-field__input">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="caption-topic" class="mdc-floating-label">Topic</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                            <button id="generate-captions-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Captions</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="captions-list"></div>
+            </div>
+            <div id="hashtag-suggestion-tool" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Hashtag Suggestion Tool</h2>
+                            <p class="mdc-typography--body2">Enter a topic and we'll generate relevant hashtags for your Instagram post.</p>
+                            <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                                <input type="text" id="hashtag-topic" class="mdc-text-field__input">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="hashtag-topic" class="mdc-floating-label">Topic</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
+                            <button id="generate-hashtags-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Hashtags</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="hashtags-list"></div>
+            </div>
+            <div id="instagram-reel-template-hub" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Instagram Reel Template Hub</h2>
+                            <p class="mdc-typography--body2">Find templates for your next Instagram Reel.</p>
+                            <div class="mdc-list">
+                                <a class="mdc-list-item" href="https://www.canva.com/instagram-reels-templates/" target="_blank">
+                                    <span class="mdc-list-item__ripple"></span>
+                                    <span class="mdc-list-item__text">Canva</span>
+                                </a>
+                                <a class="mdc-list-item" href="https://vite.io/templates" target="_blank">
+                                    <span class="mdc-list-item__ripple"></span>
+                                    <span class="mdc-list-item__text">Vite</span>
+                                </a>
+                                <a class="mdc-list-item" href="https://unfold.com/templates/reels" target="_blank">
+                                    <span class="mdc-list-item__ripple"></span>
+                                    <span class="mdc-list-item__text">Unfold</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="instagram-hook-generator" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Instagram Hook Generator</h2>
+                            <p class="mdc-typography--body2">Generate catchy hooks for your next Instagram Reel.</p>
+                            <button id="generate-hooks-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Hooks</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="hooks-list"></div>
+            </div>
+            <div id="quote-generator-for-stories" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Quote Generator for Stories</h2>
+                            <p class="mdc-typography--body2">Generate inspiring quotes for your Instagram Stories.</p>
+                            <button id="generate-quotes-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Quotes</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-list" id="quotes-list"></div>
+            </div>
+            <div id="ai-photo-enhancer" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">AI Photo Enhancer</h2>
+                            <p class="mdc-typography--body2">Upload a photo and we'll enhance it for you.</p>
+                            <input type="file" id="photo-input" accept="image/*">
+                            <button id="enhance-photo-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Enhance Photo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="enhanced-photo-placeholder"></div>
+            </div>
+            <div id="auto-subtitle-for-reel" class="mdc-card" style="margin-bottom: 1rem; display: none;">
+                <div class="mdc-card__primary-action">
+                    <div class="mdc-card__media mdc-card__media--16-9">
+                        <div class="mdc-card__media-content">
+                            <h2 class="mdc-typography--headline6">Auto Subtitle for Reel</h2>
+                            <p class="mdc-typography--body2">Upload a video and we'll generate subtitles for you.</p>
+                            <input type="file" id="reel-video-input" accept="video/*">
+                            <button id="generate-subtitles-button" class="mdc-button mdc-card__action mdc-card__action--button">
+                                <span class="mdc-button__label">Generate Subtitles</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="subtitles-placeholder"></div>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://unpkg.com/google-tts-api@2.0.2/dist/google-tts-api.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
